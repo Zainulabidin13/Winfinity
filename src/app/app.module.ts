@@ -24,7 +24,9 @@ import { WinfinityTermOtherComponent } from './winfinity-term-other/winfinity-te
 import { YeniSayfaComponent } from './yeni-sayfa/yeni-sayfa.component';
 import { YeniSayfa2Component } from './yeni-sayfa2/yeni-sayfa2.component';
 import { FilterCloseComponent } from './filter-close/filter-close.component';
-
+import {MatStepperModule, MatStepLabel, MatStep} from '@angular/material/stepper';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
     AppComponent,
@@ -52,7 +54,13 @@ import { FilterCloseComponent } from './filter-close/filter-close.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatStepperModule,
+    FormsModule,
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    // MatStep
+    // NoopAnimationsModule, 
   ],
   providers: [],
   bootstrap: [AppComponent]
